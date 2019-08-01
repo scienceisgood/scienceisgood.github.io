@@ -21,8 +21,16 @@ function handleEmailType(e) {
     console.log(emailAddy);
 }
 
-document.querySelector('.email').addEventListener('change', handleEmailType);
-document.querySelector('.contribute-button').addEventListener('click', submitToFirebaseOverlord);
+const emails = document.querySelectorAll('.email');
+const submits = document.querySelectorAll('.contribute-button');
+
+for (const m of emails)  {
+    m.addEventListener('change', handleEmailType);
+}
+
+for (const m of submits) {
+    m.addEventListener('click', submitToFirebaseOverlord);
+}
 
 function submitToFirebaseOverlord(e) {
   if (emailAddy === undefined) {
