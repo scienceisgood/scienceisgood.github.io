@@ -11,6 +11,16 @@ div
 	padding: 0;
 }
 
+form
+{
+	-webkit-appearance: none;
+}
+
+input[type=submit]
+{
+	-webkit-appearance: none;
+}
+
 b
 {
 	font-weight: 600;
@@ -1398,7 +1408,7 @@ Contribute Page CSS
 	opacity: .8;
 }
 
-.contribution-tier-card
+/*.contribution-tier-card
 {
 	display: block;
 
@@ -1415,7 +1425,7 @@ Contribute Page CSS
 	-webkit-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
 	-moz-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
 	box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
-}
+}*/
 
 .contribution-tier-card
 {
@@ -1558,7 +1568,7 @@ Contribute Page CSS
 	.contribution-tier-card
 	{
 		width: 90vw;
-		height: 0px;
+		height: 275px;
 		margin: 0 auto 40px;
 	}
 }
