@@ -325,6 +325,12 @@ mobile Nav
 	{
 		display: none;
 	}
+
+	.nav-right > *
+{
+	font-size: 11pt;
+}
+
 }
 
 /*============================================================================
@@ -1404,7 +1410,7 @@ Contribute Page CSS
 .funding-percent
 {
 	text-align: center;
-/*	color:black;*/
+	/*	color:black;*/
 	opacity: .8;
 }
 
@@ -1425,158 +1431,158 @@ Contribute Page CSS
 	-webkit-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
 	-moz-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
 	box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
-}*/
+	}*/
 
-.contribution-tier-card
-{
-	position: relative;
-
-	display: block;
-
-	width: 300px;
-	height: 420px;
-	margin: 0 auto 50px;
-	padding: 20px;
-
-	cursor: pointer;
-	transition: all .2s;
-
-	border-radius: 20px;
-	background-color: white;
-}
-
-.card-selected
-{
-	border: solid;
-	border-color: rgba(42,193,83,1);
-	-webkit-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
-	-moz-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
-	box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
-}
-
-.not-selected
-{
-	-webkit-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
-	-moz-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
-	box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
-}
-
-
-.not-selected:hover
-{
-	transform: scale(1.03);
-}
-
-.contribution-amount
-{
-	width: 100px;
-	margin: 10px auto;
-	padding: 5px;
-
-	text-align: center;
-
-	color: #357542;
-	border-radius: 7px;
-	background-color: #ecf8ed;
-}
-
-.tier-info
-{
-	text-align: center;
-}
-
-.tier-info > p4
-{
-	line-height: 150%;
-}
-
-@media only screen and (max-width: 1100px)
-{
-	.research-card
+	.contribution-tier-card
 	{
-		width: 90vw;
-		margin: 0 auto 50px;
-	}
+		position: relative;
 
-	.row,
-	.reserach-card-row
-	{
 		display: block;
+
+		width: 300px;
+		height: 420px;
+		margin: 0 auto 50px;
+		padding: 20px;
+
+		cursor: pointer;
+		transition: all .2s;
+
+		border-radius: 20px;
+		background-color: white;
 	}
 
-	.research-card-disc
+	.card-selected
 	{
-		margin-left: 0;
+		border: solid;
+		border-color: rgba(42,193,83,1);
+		-webkit-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
+		-moz-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
+		box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
 	}
 
-	.research-card-disc > h4
+	.not-selected
 	{
-		margin-bottom: 15px;
+		-webkit-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
+		-moz-box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
+		box-shadow: 0 0 44px -9px rgba(0,0,0,.21);
+	}
 
+
+	.not-selected:hover
+	{
+		transform: scale(1.03);
+	}
+
+	.contribution-amount
+	{
+		width: 100px;
+		margin: 10px auto;
+		padding: 5px;
+
+		text-align: center;
+
+		color: #357542;
+		border-radius: 7px;
+		background-color: #ecf8ed;
+	}
+
+	.tier-info
+	{
 		text-align: center;
 	}
 
-	.research-card-disc > p3
+	.tier-info > p4
 	{
-		font-size: 12pt;
-		line-height: 130%;
+		line-height: 150%;
 	}
 
-	.research-card-disc > p3 > br
+	@media only screen and (max-width: 1100px)
 	{
-		display: none;
+		.research-card
+		{
+			width: 90vw;
+			margin: 0 auto 50px;
+		}
+
+		.row,
+		.reserach-card-row
+		{
+			display: block;
+		}
+
+		.research-card-disc
+		{
+			margin-left: 0;
+		}
+
+		.research-card-disc > h4
+		{
+			margin-bottom: 15px;
+
+			text-align: center;
+		}
+
+		.research-card-disc > p3
+		{
+			font-size: 12pt;
+			line-height: 130%;
+		}
+
+		.research-card-disc > p3 > br
+		{
+			display: none;
+		}
+
+		.research-image
+		{
+			width: 75%;
+		}
+
+		.select-this-fund
+		{
+			width: 100%;
+		}
+
+		.col-2
+		{
+			padding-bottom: 10px;
+		}
+
+		.contribution-header
+		{
+			margin-top: 1px;
+			margin-bottom: 30px;
+		}
+
+		.contribute-head-section
+		{
+			margin: 80px auto 10px;
+		}
+
+		.contribution-tier-card
+		{
+			width: 90vw;
+			height: 400px;
+			margin: 0 auto 40px;
+		}
+
+		.tier-container
+		{
+			display: block;
+
+			width: 100%;
+		}
 	}
 
-	.research-image
+	@media only screen and (max-width: 700px)
 	{
-		width: 75%;
+		.contribution-tier-card
+		{
+			width: 90vw;
+			height: 350px;
+			margin: 0 auto 40px;
+		}
 	}
-
-	.select-this-fund
-	{
-		width: 100%;
-	}
-
-	.col-2
-	{
-		padding-bottom: 10px;
-	}
-
-	.contribution-header
-	{
-		margin-top: 1px;
-		margin-bottom: 30px;
-	}
-
-	.contribute-head-section
-	{
-		margin: 80px auto 10px;
-	}
-
-	.contribution-tier-card
-	{
-		width: 90vw;
-		height: 400px;
-		margin: 0 auto 40px;
-	}
-
-	.tier-container
-	{
-		display: block;
-
-		width: 100%;
-	}
-}
-
-@media only screen and (max-width: 700px)
-{
-	.contribution-tier-card
-	{
-		width: 90vw;
-		height: 350px;
-		margin: 0 auto 40px;
-	}
-}
 
 
 /*============================================================================
@@ -1618,6 +1624,11 @@ footer
 .footer-link:hover
 {
 	text-decoration: underline;
+}
+
+.footer-logo
+{
+	width: 200px;
 }
 
 @media only screen and (max-width: 1100px)
