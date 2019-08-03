@@ -1929,6 +1929,27 @@ Lab Card CSS
 	text-align: center;
 }
 
+.more
+{
+	display: none;
+}
+
+ol
+{
+	max-width: 80%;
+} 
+
+.more > p3 > ol
+{
+	opacity: .6;
+}
+
+.more > p3 > ol > li > a 
+{
+	/*text-decoration: underline;*/
+	color: blue;
+}
+
 .more > h4
 {
 	color: black;
