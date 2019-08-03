@@ -82,13 +82,61 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="show-more">
+				<div class="show-more">
 					<hr>
-					<h4>Show More</h4>
+					<h4 class="show-more-header less">Show More</h4>
 				</div>
 				<div class="more">
-					
-				</div> -->
+					<h3>Why we chose this lab</h3>
+					<p3>
+						When the human brain makes any kind of a decision, it leans on its vast archives of stored memory. Understanding the process of retrieval could one day help create implants that make it easy to remember anything, or allow therapists to help patients selectively forget painful or traumatic memories. We chose this lab because of Professor Lewis-Peacock's innovative approach of correlating real-time brain data with memory retrieval.
+					</p3>
+					<h3>Projects From this Lab</h3>
+					<p3>
+						<ol>
+							<li>Understanding what a person is seeing, remembering, or forgetting in real-time using fMRIs
+							</li>
+							<br>
+							<li>
+								Creating a real-time neurofeedback platform to help stroke patients recover
+							</li>
+							<br>
+							<li>
+								Training people to improve their memory abilities or to strategically impair them
+							</li>
+							<br>
+						</ol>
+					</p3>
+					<hr>
+					<h3>Collaborators:</h3>
+					<p3>
+						<b>The UT Austin Center for Learning and Memory</b>
+						<br><br>
+						Professor Lewis-Peacock's lab is at the University of Texas at Austin, one of the world's leading research universities. The faculty incldue winners of the Nobel Prize, Pulitzer Prize, National Medal of Science, Wolf Prize, and countless other awards.
+						<br><br>
+						Professor Lewis-Peacock has been focused on the puzzle of memory retrieval in the brain since 2008.
+					</p3>
+					<h3>Press</h3>
+					<p3>
+						<ol>
+							<li>
+								<a href="https://www.nytimes.com/2019/03/22/health/memory-forgetting-psychology.html">
+									New York Times
+								</a>
+							</li>
+							<br>
+							<li>
+								<a href="https://www.quantamagazine.org/to-remember-the-brain-must-actively-forget-20180724/">Quanta Magazine
+								</a>
+							</li>
+							<br>
+							<li>
+								<a href="https://www.youtube.com/watch?v=vNyZmSg92HI">TedX Madrid
+								</a>
+							</li>
+						</ol>
+					</p3>
+				</div>
 			</div>
 
 
@@ -111,13 +159,64 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="show-more">
+				<div class="show-more">
 					<hr>
-					<h4>Show More</h4>
+					<h4 class="show-more-header less">Show More</h4>
 				</div>
 				<div class="more">
-					
-				</div> -->
+					<h3>Why we chose this lab</h3>
+					<p3>
+						A significant problem with the current generation of devices that interface with the brain is integration into the human body. Bioelectronics will have to be significantly more flexible, cheap, and imperceptible to be usable at scale to record from neurons. The Lu Research Group is making incredible strides in several active areas of research.
+					</p3>
+					<h3>Projects From this Lab</h3>
+					<p3>
+						<ol>
+							<li>Easy and simple manufacturing of electronic-tattoos (e-tattoos)
+							</li>	
+							<br>
+							<li>
+								Wireless and disposable tattoos to record breathing, temperature, hydration, and oxygen saturation
+							</li>
+							<br>
+							<li>
+								Designing imperceptible and ultra-conformable surfaces using graphene
+							</li>
+							<br>
+							<li>
+								Studying the adhesion between soft materials and 2D materials.
+							</li>
+						</ol>
+					</p3>
+					<hr>
+					<h3>Collaborators:</h3>
+					<p3>
+						<b>The UT Austin Center for Mechanics of Solids, Structures, and Materials</b>
+						<br><br>
+						Professor Lu's lab is at the University of Texas at Austin, one of the world's leading research universities. The faculty incldue winners of the Nobel Prize, Pulitzer Prize, National Medal of Science, Wolf Prize, and countless other awards.
+						<br><br>
+						Professor Lu has been doing cutting-edge research on materials engineering since 2006
+					</p3>
+					<h3>Press</h3>
+					<p3>
+						<ol>
+							<li>
+								<a href="https://www.science.org.au/curious/technology-future/flexible-electronics">
+									Science.org
+								</a>
+							</li>
+							<br>
+							<li>
+								<a href="https://www.engr.utexas.edu/news/archive/7586-lu-wearable-electronics">U Texas Newsletter
+								</a>
+							</li>
+							<br>
+							<li>
+								<a href="http://www2.technologyreview.com/tr35/profile.aspx?TRID=1326">Technology Review
+								</a>
+							</li>
+						</ol>
+					</p3>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -145,14 +244,28 @@
 			</div>
 		</div>
 	</footer>
-    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
-    <script src="../js/signup.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script src="../js/signup.js"></script>
 
-    <script src="../js/segment.js"></script>
-    <script>
-        analytics.track("BCI");
-    </script>
+	<script src="../js/segment.js"></script>
+	<script>
+		analytics.track("BCI");
+		$(document).ready(function(){
+			$(".show-more").click(function(){
+				$(this).next().slideToggle();
+
+				$(this).children("h4").toggleClass("less");
+
+				if($(this).children("h4").hasClass("less"))
+				{
+					$(this).children("h4").html("Show More");
+				}else {
+					$(this).children("h4").html("Show Less");
+				}
+			});
+		});
+	</script>
 </body>
 </html>
