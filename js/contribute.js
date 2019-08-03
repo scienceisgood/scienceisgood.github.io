@@ -30,8 +30,8 @@ checkoutButton.addEventListener('click', function () {
     // a successful payment.
     // Instead use one of the strategies described in
     // https://stripe.com/docs/payments/checkout/fulfillment
-    successUrl: window.location.protocol + '//axonlabs.org/pages/success.html',
-    cancelUrl: window.location.protocol + '//axonlabs.org',
+    successUrl: window.location.protocol + '//axitelabs.com/pages/success.html',
+    cancelUrl: window.location.protocol + '//axitelabs.com',
   })
   .then(function (result) {
     if (result.error) {
