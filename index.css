@@ -800,6 +800,13 @@ Longevity lab cover images
 	background-size: cover;
 }
 
+#aazhang-lab
+{	
+	background-image: url(aazhang-cover.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
 /*
 BCI lab cover images
 */
