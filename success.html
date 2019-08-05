@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Axite Labs</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+	<meta name="description" content="Axite Labs">
+	<meta keyworkds="science, longevity, BCI, brain computer interface, research, labs, start up">
+	<meta name="theme-color" content="#000000">
+	<meta name="description" content="Axite helps fund exceptional labs through monthly subscriptions">
+	<meta name="twitter:card" value="summary_large_image">
+	<meta property="og:title" content="Axite - Democratizing Scientific Funding">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://www.axitelabs.com">
+	<meta property="og:description" content="Axite helps fund exceptional labs through monthly subscriptions">
+
+	<!-- HTML Meta Tags -->
+	<meta name="description" content="Axite helps fund exceptional labs through monthly subscriptions">
+
+	<!-- Google / Search Engine Tags -->
+	<meta itemprop="name" content="Axite Labs">
+	<meta itemprop="description" content="Axite helps fund exceptional labs through monthly subscriptions">
+	<meta itemprop="image" content="">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://www.axitelabs.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Axite Labs">
+	<meta property="og:description" content="Axite helps fund exceptional labs through monthly subscriptions">
+	<meta property="og:image" content="">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Axite Labs">
+	<meta name="twitter:description" content="Axite helps fund exceptional labs through monthly subscriptions">
+	<meta name="twitter:image" content="">
+
+	<!-- CSS  -->
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="animate.css">
+</head>
+<body class="success-body">
+	<nav class="flex flex-medium flex-small">
+		<div class="nav-left">
+			<a href="index.html">
+				<img src="nav-logo.jpg" alt="" class="nav-logo" width="150px" height="auto">
+				<img src="nav-logo-mobile.jpg" alt="" class="nav-logo-mobile" width="40px" height="auto">
+			</a>
+		</div>
+		<div class="nav-right">
+			<a href="who.html" class="nav-link">
+				<p>About Axite</p>
+			</a>		
+			<!-- <form action="contribute-tier.html" class="nav-buttons">
+				<input type="email" required="true" placeholder="email@example.com" class="nav-form-button nav-form-button-email email">
+				<input type="submit" value="Start Contributing" class="nav-form-button gradient contribute-button">
+			</form> -->
+		</div>
+	</nav>
+
+	<section class="body-section contribute-section">
+		<div class="column-wide success-column flex">
+			
+			<div class="message">
+				<div class="flex flex-medium flex-small">
+					<div class="col-1 intro-disc success-disc">
+						<h1>You did it!</h1>
+						<p>
+							We're so excited for you to be a part of our mission. Look for an upcoming email containing more info about what your contribution is doing as well as progress updates and backer exclusives!			
+						</p>
+					</div>
+					<div class="col-1 header-col"></div>
+					<div class="col-1 header-col"></div>
+				</div>
+			</div>
+		</div>
+		<div class="success-img">
+			<img src="success.jpg" alt="">
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+	<script src="js/segment.js"></script>
+	<script>
+		analytics.page("success");
+	</script>
+
+	<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+	<script src="js/signup.js"></script>
+
+	<script>
+		$(".lab-details-button").click(function(){
+			$(this).siblings(".details").slideToggle();
+			$(this).siblings(".details").toggleClass("open");
+
+			if ($(this).siblings(".details").hasClass("open")) {
+				$(this).html("Hide Lab Details");
+
+			} else {
+				$(this).html("Show Lab Details");
+
+			}
+		});
+
+
+
+		var tierSelected = false;
+		var fundSelected = false;
+
+		$("#bci").click(function(){
+			$(".longevity").hide();
+			$(".bci").show();
+			$(this).addClass("fund-button-active");
+			$("#longevity").removeClass("fund-button-active");
+			fundSelected = true;
+		});
+
+		$("#longevity").click(function(){
+			$(".bci").hide();
+			$(".longevity").show();
+			$(this).addClass("fund-button-active");
+			$("#bci").removeClass("fund-button-active");
+			fundSelected = true;
+		});
+	</script>
+</body>

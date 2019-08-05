@@ -1214,6 +1214,64 @@ Contribute Section CSS
 	margin-top: 50px;
 }
 
+/*
+===========================================================
+
+Success Section CSS
+
+===========================================================
+*/
+
+.success-body
+{
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.success-img
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.success-img > img
+{
+	height: 100vh;
+}
+
+.success-column
+{
+	height: 100vh;
+	align-content: center;
+}
+
+.message
+{
+	align-self: center;
+}
+
+.success-disc
+{
+	background: white;
+	padding: 12.5px;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 1050px)
+{
+	.success-column
+	{
+		margin-top: calc(50vh - 150px);
+	}
+
+	.success-disc
+	{
+		max-width: 500px;
+		margin:auto;
+	}
+}
 
 
 
