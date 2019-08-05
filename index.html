@@ -6,302 +6,625 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
 	<meta name="description" content="Axite Labs">
+	<meta keyworkds="science, longevity, BCI, brain computer interface, research, labs, start up">
 	<meta name="theme-color" content="#000000">
-	<meta name="description" content="Axite helps fund exceptional labs from world class universities focused on answering fundamental questions in key research areas">
-	<link rel="stylesheet" href="css/index.css">
+	<meta name="description" content="Axite helps fund exceptional labs through monthly subscriptions">
 	<meta name="twitter:card" value="summary_large_image">
 	<meta property="og:title" content="Axite - Democratizing Scientific Funding">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://www.axitelabs.com">
-	<!-- <meta property="og:image" content="https://i.imgur.com/gKKBU4M.png"> -->
-	<meta property="og:description" content="Axite helps fund exceptional labs from world class universities focused on answering fundamental questions in key research areas">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta property="og:description" content="Axite helps fund exceptional labs through monthly subscriptions">
+
+	<!-- HTML Meta Tags -->
+	<meta name="description" content="Axite helps fund exceptional labs through monthly subscriptions">
+
+	<!-- Google / Search Engine Tags -->
+	<meta itemprop="name" content="Axite Labs">
+	<meta itemprop="description" content="Axite helps fund exceptional labs through monthly subscriptions">
+	<meta itemprop="image" content="">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="http://www.axitelabs.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Axite Labs">
+	<meta property="og:description" content="Axite helps fund exceptional labs through monthly subscriptions">
+	<meta property="og:image" content="">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Axite Labs">
+	<meta name="twitter:description" content="Axite helps fund exceptional labs through monthly subscriptions">
+	<meta name="twitter:image" content="">
+
+	<!-- CSS  -->
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="animate.css">
 </head>
 <body>
-	<nav>
+	
+	<nav class="animated fadeInDown">
 		<div class="nav-left">
-			<img src="SFI-Logo.jpg" alt="SFI Logo" width="50px" height="50px">
+			<a href="index.html">
+				<img src="nav-logo.jpg" alt="" class="nav-logo" width="150px" height="auto">
+				<img src="nav-logo-mobile.jpg" alt="" class="nav-logo-mobile" width="40px" height="auto">
+			</a>
 		</div>
 		<div class="nav-right">
-			<a href="pages/rewards.html">Rewards</a>
-			<a href="pages/about.html">About Us</a>
-			<a href="index.html#how-it-works">How It Works</a>
-			<!-- <a href="pages/faq.html">FAQ</a> -->
-			<form action="pages/contribute.html" class="nav-form"><input class="email" type="email" placeholder="email@example.com" required="true">
-				<input class="contribute-button" type="submit" value="Start Contributing">
+			<!-- <a href="why.html" class="nav-link">
+				<p>Why Contribute</p>
+			</a> -->
+			<a href="who.html" class="nav-link about-link">
+				<p>About Axite</p>
+			</a>
+			<!-- <a href="faq.html" class="nav-link">
+				<p>FAQ</p>
+			</a> -->
+			<form action="contribute-tier.html" class="nav-buttons">
+				<input type="email" required="true" placeholder="love@science.com" class="nav-form-button nav-form-button-email email">
+				<input type="submit" value="Start Contributing" class="nav-form-button contribute-button gradient">
 			</form>
 		</div>
 	</nav>
 
-	<section class="landing">
-		<div class="landing-container landing-width">
-			<div class="row">
-				<div class="col-1">
-					<h1 class="hero-header">
-						Accelerate Life Changing
-						Scientific Research
-					</h1>
-					<img class="block-image mobile-hero-image" src="pngs/science_tubes.png" alt="Science Tubes and Scientist" width="550px" height="auto">
-					<p1 class="hero-subhead">
-						Support primary research on the most pressing topic <br> facing humanity through a monthly subscription 
-					</p1>
+	<section class="header">
+		<div class="header-img-container flex flex-medium flex-small no-flex-xs">
+			<div class="col-1 top-col"></div>
+			<div class="col-1 top-col"></div>
+			<div class="header-form-container col-1 flex flex-medium flex-small no-flex-xs">
+				<div class="header-form">
+					<h2 class="center-text">
+						Fund The Future <br>
+						Of Scientific Research 
+					</h2>
 
-					<div class="landing-buttons">
-						
-						<form action="pages/contribute.html"><input class="email" type="email" placeholder="email@example.com" required="true">
-							<input class="contribute-button" type="submit" value="Start Contributing">
+					<p class="center-text">
+						Support the next generation of research on the most pressing topic facing humanity through a monthly subscription 
+					</p>
+
+					<div class="header-form-buttons">
+						<form action="contribute-tier.html">
+							<input type="email" placeholder="love@science.com" required="true" class="header-form-button header-form-button-email email">
+							<input type="submit" value="Start Contributing" class="header-form-button contribute-button gradient">
 						</form>
-						<p5 class="button-hr">&#x2015; or &#x2015;</p5>
-						<a class="explore-button" href="index.html#research">Explore The Research</a>
 					</div>
-				</div> 
-				<div class="col-1 hero-image">
-					<img class="block-image" src="pngs/science_tubes.png" alt="Science Tubes and Scientist" width="550px" height="auto">
 				</div>
 			</div>
-		</div>
-
-
-		<div class="uni-logos">
-			<img class="uni-logos" src="pngs/uni-logos.jpg" alt="university Logos" width="1150px" height="auto">
-			<img class="uni-logos-mobile" src="pngs/uni-logos-mobile.jpg" alt="university Logos" width="300px;" height="auto">
+			<div class="col-1 header-col"></div>
+			<div class="col-1 header-col"></div>
 		</div>
 	</section>
 
-	<section class="why-contribute">
-		<h2 class="section-header">We’re Bridging A $38 Billion Dollar Gap</h2>
-		<p3 class="key-areas-disc">Scientific funding has been slashed in recent years. Our goal is to restore available funding and cut down on wasted lab hours through direct funding. Here's why:</p3>
-
-		<div class="sfi-cards">
-			<div class="sfi-card">
-				<h3>Research 
-					Stimulates the Economy 
-				</h3>
-				<img class="sfi-card-image" src="pngs/sfi-funding.png" alt="" width="300px" height="auto">
-				<p4 class="sfi-card-disc">Basic bio-medical research generates $2.8 trillion dollars a year. <sup>1</sup></p4>
+	<section class="body-section section-1">
+		<div class="column-wide">
+			<!-- <img src="uni-logos.jpg" alt="" class="uni-logos" width="1000px"> -->
+			<!-- <hr> -->
+			<h1 class="section-1-header">Scientific research is broken.<br>
+			Together, we can fix it.</h1>
+			<div class="flex intro-disc-container">
+				<div class="col-1 intro-disc">
+					<p>
+						Federal funding for science has fallen sharply since 2013. Applying for grants 
+						wastes 100,000+ hours a year of scientists' time, and research is too opaque 
+						for most people to understand, let alone fix. At Axite Labs, our mission is to open up the world of scientific research and directly fund labs working toward a better future.
+					</p>
+				</div>
+				<div class="col-1">
+					<p>
+						We scout out promising academic labs with the help of subject matter 
+						experts, and distill their cutting-edge work so people can directly understand and support research. In return, you receive never-before-available perks like Q&A sessions with experts, interactive demos, and even the chance to tour labs and take home early prototypes.
+					</p>
+				</div>
 			</div>
-
-			<div class="sfi-card">
-				<h3>Scientific Research 
-				Solves Big Problems</h3>
-				<img class="sfi-card-image" src="pngs/sfi-problems.png" alt="" widthy="300px" height="auto">
-				<p4 class="sfi-card-disc">Funding basic science research directly produced transistors, solar power, satellites, TV, and more.<sup>3</sup></p4>
+			<hr>
+			<h1>Here's how it works</h1>
+			<div class="how-it-works-card-container flex">
+				<div class="col-1 how-it-works-card">
+					<p><b>Step One</b></p>
+					<h2>Explore the research</h2>
+					<p>
+						Explore labs we've collected together into umbrella funds based on their missions and type of research. 
+					</p>
+				</div>
+				<div class="col-1 how-it-works-card">
+					<p><b>Step Two</b></p>
+					<h2>Select a fund <br class="br-desktop"><br class="br-desktop"></h2>
+					<p>
+						Subscribe to a fund you're excited about to accelerate their progress towards the mission. Every single dollar counts.
+					</p>
+				</div>
+				<div class="col-1 how-it-works-card">
+					<p><b>Step Three</b></p>
+					<h2>Get updates & rewards </h2>
+					<p>
+						Receive monthly updates on the fund you’re contributing to, as well as any rewards for your contribution tier!
+					</p>
+				</div>
 			</div>
-
-			<div class="sfi-card">
-				<h3>Goverment Funding <br>Has Been Slashed</h3>
-				<img class="sfi-card-image" src="pngs/sfi-grants.png" alt="" width="300px" height="auto">
-				<p4 class="sfi-card-disc">Grant acceptance by the National Institute for Health dropped by 50% since 2000.<sup>2</sup></p4>
-			</div>
-		</div>
-		<!-- <div class="explore-the-research">
-			<a href="">
-				<button class="explore-featured-projects-button">
-					Explore Featured Labs
-				</button>
-			</a>
-		</div> -->
-
+		</div>		
 	</section>
 
-	<section class="how-does-it-work" id="how-it-works">
-		<h2 class="section-header">How Does it Work? </h2>
-		<div class="how-it-works-container landing-width">
-			<div class="row how-it-works-row">
-				<div class="col-1">
-					<img class="step-one step-image" src="pngs/vetting.png" alt="vetting png" width="550px" height="auto">
-				</div>
-				<div class="col-1">
-					<div class="step-container">
-						<p4 class="how-it-works-step">
-							Vetting
-						</p4>	
-						<h3 class="how-it-works-header">We work with subject matter
-							experts to determine the 
-						right projects to fund</h3>
-						<p3 class="step-disc">
-							There are many different projects and laboratories 
-							doing promising research. We diligently make sure
-							we are funding the most impactful projects 
-							we can to further the overarching goals of each research area. 
-							<br><br>
 
-							<!-- Take a look at our research criteria <a href="" class="a-tag">here</a>. -->
-						</p3>
+	<section class="body-section section-2">
+		<div class="column-wide">
+			<div class="research-intro">
+				<hr>
+				<h1>
+					Explore the Research
+				</h1>
+				<div class="flex">
+					<div class="col-1">
+						<p>
+							We are currently focused on what two areas on the frontier of scientific knowledge: life extension research and brain computer interfaces (BCI). Funding these areas could bring the 2040s and the next-generation of medical technology to us a generation sooner. Find out more about each area and the labs in them below.
+						</p>
 					</div>
+					<div class="col-1"></div>
 				</div>
+				<img src="uni-logos.jpg" alt="" class="uni-logos" width="1000px">
 			</div>
-
-
-			<div class="row how-it-works-row">
-				<div class="col-1">
-					<div class="step-container">
-						<img class="step-two-mobile step-image" src="pngs/distill.png" alt="distillation illustration" width="550px" height="auto">
-						<div class="col-1">
-							<p4 class="how-it-works-step">
-								Distillation 
-							</p4>	
-							<h3 class="how-it-works-header">We condense and illustrate the 
-							core concepts of the research</h3>
-							<p3 class="step-disc">
-								Research can be complex and difficult to understand, 
-								even for scientists in the field. We boil down the concepts 
-								into interesting and interactive demonstrations so you can
-								better understand the research you’re contributing to! 
-								<br><br>
-
-								<!-- Take a look a some of our featured projects <a href="" class="a-tag">here</a>. -->
-							</p3>
-						</div>
-					</div>
-				</div>
-				<div class="col-1">
-					<img class="step-two" src="pngs/distill.png" alt="distillation illustration" width="550px" height="auto">
-				</div>
-			</div>
-
-
-			<div class="row how-it-works-row">
-				<div class="col-1">
-					<img class="step-image" src="pngs/fund.png" alt="" width="550px" height="auto">
-				</div>	
-				<div class="col-1">
-					<div class="step-container">
-						<p4 class="how-it-works-step">
-							Funding
-						</p4>	
-						<h3 class="how-it-works-header">You select the initiatives & projects 
-						you’re most interested in </h3>
-						<p3 class="step-disc">
-							With a single click, you can help fund primary laboratory science. 
-							We’ll send you monthly updates on how your contribution has 
-							advanced projects and led to new discoveries in labs across the country. 
-						</p3>
-					</div>
-				</div>
-			</div>
-
-			<div class="row how-it-works-row">
-				<div class="col-1">
-					<div class="step-container">
-						<img class="step-two-mobile step-image" src="pngs/email.png" alt="distillation illustration" width="550px" height="auto">
-						<div class="col-1">
-							<p4 class="how-it-works-step">
-								Contributor Rewards
-							</p4>	
-							<h3 class="how-it-works-header">Recieve lab updates, <br> physical keepsakes, and more! </h3>
-							<p3 class="step-disc">
-								Monthly emails keep you up to date on lab progress and give you exclusive backer goodies like video Q+A’s with the researchers, on-site tours, prototype devices, and more!
-
-								<!-- Take a look a some of our featured projects <a href="" class="a-tag">here</a>. -->
-							</p3>
-							<div class="how-it-works-buttons" id="research">
-							<form action="pages/contribute.html"><input class="email" type="email" placeholder="email@example.com" required="true">
-								<input class="contribute-button" type="submit" value="Start Contributing">
-							</form>
-						</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-1">
-					<img class="step-two" src="pngs/email.png" alt="distillation illustration" width="550px" height="auto">
-				</div>
-			</div>
-
 		</div>
-	</section >
 
-	<section class="key-areas">
-		<h2 class="section-header">The Next Frontier of Progress</h2>
-		<p3 class="key-areas-disc">Life extension and brain-computer interfaces are two of the most promising fields to improve human lives. Labs in these areas are making strides towards curing Alzheimer's, blindness, cancer, and cardiac disease.</p3>
+		<div class="flex research-button-nav">
+			<div class="research-fund-button col-1 center-text fund-button-active" id="longevity"><h3>View Longevity Research</h3></div>
+			<div class="research-fund-button col-1 center-text" id="bci"><h3>View BCI Research</h3></div>
+		</div>
+		<section class="blue">
+			<section class="column-wide">
+				<section class="longevity">
+					<div class="research-disc flex">
+						<div class="col-1">
+							<p><b>What is Life Extension Research?</b></p>
+							<br>
+							<p>
+								Longevity research is, in short, research to keep you from getting sick or dying. We think this is pretty important. The labs we fund are some of the best in the world, working to understand and treat diseases like Alzheimer's, strokes, and aging. Take a look at some of the coolest science happening in the space.
+							</p>
+						</div>
+						<div class="col-1"></div>
+					</div>
 
-		<div class="research-area-cards">
-			<a href="pages/lifeExtension.html">
-				<div class="card">
-					<h3 class="card-header">
-						Life Extension <br>Research
+					<div class="lab-card-container">
+						<p class="featured-labs-label"><b>Featured Labs</b></p>
+
+						<div class="lab-card">
+							<div class="flex">
+								<div class="col-1 lab-cover-img-container" id="rewire-lab">
+									<div class="lab-cover-img"></div>
+								</div>
+								<div class="col-2">
+									<h2 class="lab-name">
+										Rewire Lab <!-- - UT Austin -->
+									</h2>
+									<p class="lab-disc">
+										The Rewire Lab is run by Professor James Sulzer, an Assistant Professor in robotics and biomechanics at the University of Texas at Austin. He previously studied at Northwestern University, where he received his Ph.D.
+										<br><br>
+										<b class="mission">Mission:</b> The Rewire Lab focuses on creating technology to help patients rehabilitate after neurological injuries such as strokes - especially recovering the ability to walk. Important barriers include the poor recovery of fine motor control, quantifying how much physical therapy to apply, and lack of proper characterization of motor impairment.
+									</p>
+								</div>
+							</div>
+							<hr class="lab-card-hr">
+							<div class="lab-details">
+								<div class="details">
+									<div class="flex">
+										<div class="col-1 details-column">
+											<h3>At a glance</h3>
+											<p>Professor Sulzer founded the first international conference on real-time fMRI. His lab current employs 10 Ph.D. and postdoc students, one visiting scholar, and four undergraduates. He was a founding member of UT's CARE center (Clinically Applied Research and Engineering).</p>
+											<br><br>
+
+											<h3>Why we chose this lab</h3>
+											<p>
+												Strokes and other injury can leave patients crippled and without motor control. The Rewire Lab is one of the first labs in the world to be investigating how real-time brain activity can be used to inform better physical therapy and help patients recover faster.
+											</p>
+
+											<br> <br>
+											<h3>Related Links</h3>
+											<p>
+												1. <a href="https://www.scientificamerican.com/article/stroke-therapy/"> Scientific American: Stroke Therapy</a>
+												<br><br>
+												2. <a href="https://www.youtube.com/watch?v=Sjkgm6x3LlY">TEDx: Johns Hopkins University</a>
+												<br><br>
+												3. <a href="https://www.youtube.com/watch?v=-B8cWZZDudI">Demystifying Medicine: Motor Rehabilitation after Stroke</a>
+											</p>
+										</div>
+										<div class="col-1">
+											<h3>Recent Projects</h3>
+											<p>
+												1. A feedback system to regulate a subject's brain activity to a desired state, using real-time fMRI.
+												<br><br>
+												2. A robotic assistive device to fix stiff-knee gait in stroke victims.
+												<br><br>
+												3. Analyzing the walking patterns of stroke patients to predict recovery times.
+												<br><br>
+												4. A real-time feedback system to let people regulate their own brain activity for physical therapy.
+											</p>
+											<br><br>
+
+											<h3>Collaborators</h3>
+											<p>
+												<b>The Cockrell School of Engineering</b>
+												<br>
+												The Rewire Lab is at the University of Texas at Austin, one of the world's leading research universities. The faculty include winners of the Nobel Prize, Pulitzer Prize, National Medal of Science, Wolf Prize, and countless other awards.
+												<img class="collab-logo" src="logo-ut.png" alt="" width="90%" >
+											</p>
+										</div>
+									</div>
+								</div>
+								<p class="lab-details-button center-text"><b>View Lab Details</b></p>
+							</div>
+
+						</div>
+
+						<div class="lab-card">
+							<div class="flex">
+								<div class="col-1 lab-cover-img-container">
+									<div class="lab-cover-img" id="sessler-lab"></div>
+								</div>
+								<div class="col-2">
+									<h2 class="lab-name">
+										Sessler Group <!-- - UT Austin -->
+									</h2>
+									<p class="lab-disc">
+                                        The Sessler Group is run by Professor Jonathan Sessler, the Welch Regents Chair and a Centennial Professor in Chemistry at the University of Texas at Austin. He got his Ph.D. at Stanford University in 1982.
+										<br><br>
+										<b class="mission">Mission:</b>The Sessler Group works in molecular engineering: designing and constructing molecules carefully tailored to serve as novel therapeutic or diagnostic agents.
+									</p>
+								</div>
+							</div>
+							<hr class="lab-card-hr">
+							<div class="lab-details">
+								<div class="details">
+									<div class="flex">
+										<div class="col-1 details-column">
+											<h3>At a glance</h3>
+											<p>
+                                            Professor Sessler fought recurrent Hodgkin's lymphoma while completing his Ph.D. in anti-cancer research at Stanford. He founded Pharmacyclics to create new cancer drugs, acquired for $21 billion by AbbVie in 2015. Professor Sessler has 75 patents and was named UT Austin's inventor of the year in 2016.</p>
+											<br><br>
+
+											<h3>Why we chose this lab</h3>
+											<p>
+                                            An important part of enabling humans to live longer and happier lives is beating cancer. Very few researchers have made contributions to the anti-cancer battle as much as Professor Sessler, who has fought cancer as a researcher, patient, and entrepreneur. The Sessler Group continues to work on the cutting-edge of designer drugs to beat cancer. Steinbruck's work on anti-plaque molecules also has potential implications for treating Alzheimer's and related diseases.
+											</p>
+
+											<br> <br>
+											<h3>Related Links</h3>
+											<p>
+												1. <a href="http://www.or.org/JonathanSessler.html">Profile of Professor Sessler</a>
+												<br><br>
+												2. <a href="https://www.youtube.com/watch?v=nPT1nD6Wh6E">Plaques in Alzheimer's Disease</a>
+												<br><br>
+												3. <a href="https://www.youtube.com/watch?v=RaS915WXmnI">Talk on Texaphyrin</a>
+											</p>
+										</div>
+										<div class="col-1">
+											<h3>Recent Projects</h3>
+											<p>
+												1. Ph.D. student Axel Steinbruck is working on creating a variant of an anti-iron drug (Deferasirox) to detox or destroy amyloid plaques in the brain.
+												<br><br>
+												2. The lab is working with larger-than-normal porphyrin molecules - which they've appropriately named Texaphyrin.
+												<br><br>
+												3. Experimenting with specially designed metal-ion binding molecules to deprive and kill cancer cells.
+											</p>
+											<br><br>
+
+											<h3>Collaborators</h3>
+											<p>
+												<b>The University of Texas College of Natural Sciences</b>
+												<br>
+                                                Professor Sessler's lab is at the University of Texas at Austin, one of the world's leading research universities. The faculty include winners of the Nobel Prize, Pulitzer Prize, National Medal of Science, Wolf Prize, and countless other awards.
+												<img class="collab-logo" src="logo-cns.png" alt="" width="90%" >
+											</p>
+										</div>
+									</div>
+								</div>
+								<p class="lab-details-button center-text"><b>View Lab Details</b></p>
+							</div>
+						</div>
+					</div>
+					<h3 class="center-text learn-more-longevity">
+						Stay tuned for more labs every week!
 					</h3>
-					<img class="card-image" src="pngs/longevity.png" alt="" width="300px" height="auto">
-					<p4 class="card-disc">Aimed at curing age-related disease, this research seeks to provide humans with the longest, happiest lives possible </p4>
-					<a href="pages/lifeExtension.html">
-						<button class="explore-featured-projects-button">
-							Explore Longevity Labs
-						</button>
-					</a>
+				</section>
+
+
+				<section class="bci">
+					<div class="research-disc">
+						<div class="flex">
+							<div class="col-1">
+								<p><b>What is BCI Research?</b></p>
+								<br>
+								<p>
+									BCI (brain computer interface) research seeks to understand how the brain computes and build devices to write and read from it. With BCI, we can create better bionic limbs for amputees, let the blind see, and enable higher-bandwidth links to your computer, Google Assistant, or the Internet. BCIs will likely become the de-facto way humans of the future interact with computers. 
+								</p>
+							</div>
+							<div class="col-1"></div>
+						</div>
+					</div>
+
+					<div class="lab-card-container">
+						<p class="featured-labs-label"><b>Featured Labs</b></p>
+
+						<div class="lab-card">
+							<div class="flex">
+								<div class="col-1 lab-cover-img-container">
+									<div class="lab-cover-img" id="lu-lab"></div>
+								</div>
+								<div class="col-2">
+									<h2 class="lab-name">
+										Lu Research Group
+									</h2>
+									<p class="lab-disc">
+										The Lu Research Group is run by Professor Nanshu Lu, an Associate Professor in materials engineering at the University of Texas. She receieved her Ph.D. from Harvard University.
+										<br><br>
+										<b class="mission">Mission:</b> To understand and manufacture the next generation of flexible and stretchable electronics for interfacing with the human body.
+									</p>
+								</div>
+							</div>
+							<hr class="lab-card-hr">
+							<div class="lab-details">
+								<div class="details">
+									<div class="flex">
+										<div class="col-1 details-column">
+											<h3>At a glance</h3>
+											<p>Dr. Lu has 60 peer reviewed articles with over 5600 citations by other researchers. She has 1 issued patent and 5 currently pending ones. Dr. Lu has 12 Ph.D. students and postdoctoral researchers in her lab. Her research has been highlighted by the MIT Technology Review, CNN, BBC, NPR, and the Smithsonian.</p>
+											<br><br>
+
+											<h3>Why we chose this lab</h3>
+											<p>
+												A significant problem with the current generation of devices that interface with the brain is integration with the human body. Bioelectronics will have to be significantly more flexible, cheap, and imperceptible to be usable at scale, and the Lu research group is making incredible strides in these active areas of research.
+											</p>
+
+											<br> <br>
+											<h3>Related Links</h3>
+											<p>
+												1. <a href="https://www.engr.utexas.edu/news/archive/7586-lu-wearable-electronics">UTexas: Wearable Electronics</a>
+												<br><br>
+												2. <a href="https://www.science.org.au/curious/technology-future/flexible-electronics">Science: Flexible Electronics</a>
+												<br><br>
+												3. <a href="http://www2.technologyreview.com/tr35/profile.aspx?TRID=1326">MIT Technology Review: Profile</a>
+											</p>
+										</div>
+										<div class="col-1">
+											<h3>Recent Projects</h3>
+											<p>
+												1. Easy and simple manufacturing of electronic-tattoos (e-tattoos)
+												<br><br>
+												2. Wireless and disposable tattoos to record breathing, temperature, hydration, and oxygen saturation
+												<br><br>
+												3. Designing imperceptible and ultra-conformable surfaces using graphene
+												<br><br>
+												4. Studying the adhesion between soft materials and 2D materials
+											</p>
+											<br><br>
+
+											<h3>Collaborators</h3>
+											<p>
+												<b>The UT Austin Center for Mechanics of Solids, Structures, and Materials</b>
+												<br>
+												Professor Lu's lab is at the University of Texas at Austin, one of the world's leading research universities. The faculty include winners of the Nobel Prize, Pulitzer Prize, National Medal of Science, Wolf Prize, and countless other awards.
+												<img class="collab-logo" src="Cockrell.png" alt="" width="90%" >
+											</p>
+										</div>
+									</div>
+								</div>
+								<p class="lab-details-button center-text"><b>View Lab Details</b></p>
+							</div>
+						</div>
+
+
+						<div class="lab-card">
+							<div class="flex">
+								<div class="col-1 lab-cover-img-container">
+									<div class="lab-cover-img" id="lewpealab-lab"></div>
+								</div>
+								<div class="col-2">
+									<h2 class="lab-name">
+									    Robinson Lab	
+									</h2>
+									<p class="lab-disc">
+                                        The Robinson Lab is run by Professor Jacob Robinson, an Associate Professor in Electrical and Computer Engineering at Rice University. He received his Ph.D. from Cornell University, and spent time as a postdoc at Harvard University.
+										<br><br>
+										<b class="mission">Mission:</b> The Robinson Lab develops nanotechnology to monitor and control specific cells in the brain. Their goal is to understand the fundamental principles of neural function, and advance the treatment of neurological disorders.
+									</p>
+								</div>
+							</div>
+							<hr class="lab-card-hr">
+							<div class="lab-details">
+								<div class="details">
+									<div class="flex">
+										<div class="col-1 details-column">
+											<h3>At a glance</h3>
+											<p>
+                                            The Robinson Lab was selected to lead a major project in DARPA's 4-year Next-gen Neurotechnology initiative, and Professor Robinson has received the DARPA Young Faculty Award. The lab consists of 14 graduate students, postdocs, and full-time research scientists.
+                                            </p>
+											<br><br>
+
+											<h3>Why we chose this lab</h3>
+											<p>
+                                            Scientists are currently trying to improve the practicality of several different types of brain-machine interfaces: electrical, optical, and magnetic. The Robinson Lab has extremely promising projects to record from the brain in each of these three fields, and is making progress at improving all of these approaches.
+											</p>
+
+											<br> <br>
+											<h3>Related Links</h3>
+											<p>
+												1. <a href="https://www.eurekalert.org/pub_releases/2019-05/ru-ffc052019.php">EurekaAlert: DARPA N3</a>
+												<br><br>
+												2. <a href="https://www.sciencemag.org/news/2018/12/tiny-implantable-wireless-devices-could-help-people-repair-nerves-and-lose-weight">Science Mag: Implantable devices for nerve repair</a>
+												<br><br>
+												3. <a href="https://www.youtube.com/watch?v=RMEIsBYwBRw">Professor Robinson on EE in neuroscience</a>
+											</p>
+										</div>
+										<div class="col-1">
+											<h3>Recent Projects</h3>
+											<p>
+												1. "Fluidic Microdrives", which use fluid flow to deliver ultraflexible electrodes into the brain without disrupting the tissue
+												<br><br>
+												2. Combining integrated nanophotonic elements with computational imaging to develop flat microscopes that are completely integrated onto a single silicon chip
+												<br><br>
+												3. Harnessing magnetic fields to manipulate cell activity with two primary approaches: materials that convert magnetic to electric fields for wireless stimulation, and rendering genetically modified neurons sensitive to a magnetic field
+											</p>
+											<br><br>
+
+											<h3>Collaborators</h3>
+											<p>
+												<b>The Rice Department of Electrical Engineering</b>
+												<br>
+											    The Robinson Lab is at Rice University, a pioneer in applied science programs such as nanotechnology, artificial heart research, structural chemical analysis, and space science. It has been consistently ranked the best university in the world for materials science research.	
+												<img class="collab-logo" src="logo-rice.jpg" alt="" width="90%" >
+											</p>
+										</div>
+									</div>
+								</div>
+								<p class="lab-details-button center-text"><b>View Lab Details</b></p>
+							</div>
+						</div>
+
+					</div>
+					<h3 class="center-text learn-more-longevity">
+						Stay tuned for more labs every week!
+					</h3>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<section class="section-3" id="contribute">
+		<div class="column-wide">
+			<div class="select-fund">
+				<h1>Ready to help fund science?</h1>
+				<div class="flex">
+					<div class="col-1 intro-disc">
+						<p>You really can’t go wrong above - both of our funds contain labs doing some of the most cutting-edge research on the planet. Don’t see an area of science you’re interested in? Fear not: We are constantly on the lookout for research to push humanity into the future - sign up for our newsletter. Have a specific cause or lab in mind? <br> <a href="mailto:founders@axitelabs.com">Reach out anytime</a> and let's chat.</p>
+					</div>
+					<div class="col-1">
+						<p>
+							Currently, you can only donate towards an entire fund. While professors have many projects, having to report these projects incentivizes choosing safe, predictable science. If you’re really passionate about a specific lab or project, just <a href="mailto:founders@axitelabs.com">get in touch</a> with us and we’ll figure something out. We're constantly making changes, so let us know how we can be better.
+						</p>
+					</div>
 				</div>
-			</a>
-			<a href="pages/bci.html">
-				<div class="card">
-					<h3 class="card-header">
-						Brain Computer 
-						Interfaces (BCI)
-					</h3>
-					<img class="card-image" src="pngs/bci.png" alt="" width="300px" height="auto">
-					<p4 class="card-disc">Better understanding the brain helps us conquer paralysis, beat blindness, and maybe improve our memories one day </p4>
-					<div>	
-						<a href="pages/bci.html">
-							<button class="explore-featured-projects-button">
-								Explore BCI Labs
-							</button>
+				<div class="fund-button-container flex">
+					<div class="col-1">
+						<a href="longevity-fund.html" class="no-underline">
+							<div class="select-fund-button" id="longevity-fund-button">
+								<h2>longevity fund</h2>
+							</div>
+						</a>
+					</div>
+					<div class="col-1">
+						<a href="bci-fund.html" class="no-underline">
+							<div class="select-fund-button" id="bci-fund-button">
+								<h2>BCI fund</h2>
+							</div>
 						</a>
 					</div>
 				</div>
-			</a>
-		</div>
-
-		<!-- <a class="why-these-three" href="pages/faq.html">
-			<p4>Why these two?</p4>
-		</a> -->
-	</section>
-
-	<!-- <section>
-		<h2 class="section-header">Contributor Rewards</h2>
-		<p3 class="key-areas-disc">Contributors recieve a monthly newsletter containing updates from labs you're funding, significant findings, interactive demos, and Q&A's with researchers!</p3>
-		<img class="block-image emails" src="pngs/email.png" alt="Move Science Forward" width="700px" height="auto">
-	</section> -->
-
-	<section class="ready-to-start">
-		<h2 class="section-header">Ready? Let's Move Society Forward</h2>
-
-		<img class="block-image" src="pngs/move-forward.png" alt="Move Science Forward" width="600px" height="auto">
-		
-		<div class="contribution-button-container">
-			<form action="pages/contribute.html"><input class="email" type="email" placeholder="email@example.com" required="true">
-				<input class="contribute-button" type="submit" value="Start Contributing">
-			</form>
-		</div>
-	</section>
-	<footer>
-		<div class="footer-container landing-width">
-			<div class="footer-left col-1">
-				<img class="footer-logo" src="pngs/sfi-logo.png" alt="" width="350px">
 			</div>
-			<div class="footer-right col-1">
-				<div class="col-1">
-					<h4>Discover</h4>
-					<a href="index.html#how-it-works"><p3 class="footer-link">How It Works</p3></a>
-					<a href="pages/about.html"><p3 class="footer-link">About Us</p3></a>
-					<a href="index.html#research"><p3 class="footer-link">Research Areas</p3></a>
-					<a href="pages/about.html"><p3 class="footer-link">Our Mission</p3></a>
-				</div>
-				<div class="col-1">
-					<h4>Resources</h4>
-					<a href="https://twitter.com/ScientificFund1"><p3 class="footer-link">Follow us on Twitter</p3></a>
-					<a href="mailto:founders@silkswap.com"><p3 class="footer-link">Get in Touch</p3></a>
-					<a href="pages/faq.html"><p3 class="footer-link">FAQ</p3></a>
-				</div>
+		</section>
+
+		<!-- <section class="section-4">
+			<div class="column-wide">
+				<hr>
+				<h1>FAQ</h1>
 			</div>
-		</div>
-	</footer>
+		</section> -->
 
-	<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
-	<script src="js/signup.js"></script>
+		<footer>
 
-	<script src="js/segment.js"></script>
-	<script>
-		analytics.page("Home");
+		</footer>
+        		<!-- JS -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <script src="js/segment.js"></script>
+        <script>
+            analytics.page("Home");
+        </script>
+
+        <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+        <script src="js/signup.js"></script>
+
+		<script type="text/javascript">
+			jQuery(function(){
+				var Bottom = $('.blue').offset().top + $('.blue').outerHeight(true);;
+
+				var distance = $('.research-button-nav').offset().top,
+				$window = $(window);
+
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 10) { 
+						$("nav").slideDown(100);
+						$("nav").css("display","flex");
+					}
+					if ($(this).scrollTop() < 10) { 
+						$("nav").slideUp(200);
+					}
+				});
+
+				$(".lab-details-button").click(function(){
+					$(this).siblings(".details").slideToggle();
+					$(this).siblings(".details").toggleClass("open");
+
+					if ($(this).siblings(".details").hasClass("open")) {
+						$(this).html("Hide Lab Details");
+
+					} else {
+						$(this).html("Show Lab Details");
+
+					}
+				});
+
+
+
+				var tierSelected = false;
+				var fundSelected = false;
+
+				$("#bci").click(function(){
+					$(".longevity").hide();
+					$(".bci").show();
+					$(this).addClass("fund-button-active");
+					$("#longevity").removeClass("fund-button-active");
+					fundSelected = true;
+				});
+
+				$("#longevity").click(function(){
+					$(".bci").hide();
+					$(".longevity").show();
+					$(this).addClass("fund-button-active");
+					$("#bci").removeClass("fund-button-active");
+					fundSelected = true;
+				});
+
+				$(".tier-card-submit").click(function(){
+					$(this).parent().parent(".tier-card").siblings(".tier-card").removeClass("tier-card-selected");
+					$(this).parent().parent(".tier-card").addClass("tier-card-selected");
+					tierSelected = true;
+				});
+
+			// $window.scroll(function() {
+			// 	if ( $window.scrollTop() >= distance) {
+			// 		$(".research-button-nav").addClass("fixed-nav");
+			// 		$(".blue").css("margin-top","134px");
+			// 	}
+			// 	else
+			// 	{
+			// 		$(".research-button-nav").removeClass("fixed-nav");
+			// 		$(".blue").css("margin-top","0");
+			// 	}
+
+			// 	if ( distance.scrollTop() >= 60) {
+			// 		$(".research-button-nav").slideUp("fast");
+			// 		// $(".blue").css("margin-top","0");
+			// 		$(".research-button-nav").addClass("under");
+			// 	}
+
+			// 	if ( distance.scrollTop() <= 60 )
+			// 	{
+			// 		if ($(".research-button-nav").hasClass('under')) {
+			// 			$(".research-button-nav").slideDown("fast");
+			// 		}
+			// 	} 
+			// 	console.log($(".section-3").scrollTop());
+			// });
+
+		});
 	</script>
 </body>
 </html>

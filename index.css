@@ -1,0 +1,1219 @@
+/*
+===========================================================
+
+CCS CLEAR FIXES	
+
+===========================================================
+*/
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	/*padding-top:60px; */
+}
+
+@font-face
+{
+	font-family: header;
+	src: url(SuisseWorks-Bold.otf);
+}
+
+
+@font-face
+{
+	font-family: header;
+	src: url(SuisseWorks-Bold.otf);
+	font-weight: bold;
+}
+
+@font-face
+{
+	font-family: body;
+	src: url(UntitledSansTest-Regular.otf);
+}
+
+h1,
+h2,
+h3,
+h4
+{
+	font-family: header;
+	font-weight: normal;
+	text-transform: capitalize;
+	padding-bottom: 25px;
+}
+
+h1
+{
+	font-size: 26pt;
+	color:#3145FF;
+}
+
+h2
+{
+	font-size: 20pt;
+	color:#3145FF;
+}
+
+h3
+{
+	font-size: 16pt;
+	color:#3145FF;
+}
+
+h4
+{
+	font-size: 14pt;
+	color:#3145FF;
+}
+
+p
+{
+	font-family: body;
+	font-size: 13pt;
+	line-height: 150%;
+	/*color:#3145FF;*/
+}
+
+p2
+{
+	font-family: body;
+	font-size: 11pt;
+	line-height: 150%;
+	/*color:#3145FF;*/
+}
+
+hr
+{
+	border-width: 3px;
+	border-color: #3145FF;
+	margin-bottom: 25px;
+	border-style: solid;
+}
+
+input[type="submit"]
+{
+	cursor: pointer;
+}
+
+.column-wide
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.block
+{
+	display: block;
+}
+
+.center-text
+{
+	text-align: center;
+}
+
+.flex
+{
+	display: flex;
+}
+
+.col-1
+{
+	flex: 1;
+}
+
+.col-2
+{
+	flex: 2;
+}
+
+.col-3
+{
+	flex: 3;
+}
+
+.body-section
+{
+	margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1100px)
+{
+	.column-wide
+	{
+		width: 800px;
+		margin: 0 auto;
+	}
+
+}
+
+@media only screen and (max-width: 900px)
+{
+	.column-wide
+	{
+		width: 80vw;
+		margin: 0 auto;
+	}
+
+	h1
+	{
+		font-size: 24pt;
+		color:#3145FF;
+	}
+
+	h2
+	{
+		font-size: 18pt;
+		color:#3145FF;
+	}
+
+	h3
+	{
+		font-size: 14pt;
+		color:#3145FF;
+	}
+
+	h4
+	{
+		font-size: 12pt;
+		color:#3145FF;
+	}
+
+	.col-1:first-of-type > p 
+	{
+		margin-bottom: 25px;
+	}
+
+}
+
+@media only screen and (max-width: 500px)
+{
+	h1
+	{
+		font-size: 20pt;
+		color:#3145FF;
+	}
+
+	h2
+	{
+		font-size: 16pt;
+		color:#3145FF;
+	}
+
+	.column-wide
+	{
+		width: 90vw;
+		margin: 0 auto;
+	}
+
+	h4
+	{
+		font-size: 14pt;
+	}
+
+	p2
+	{
+		font-size: 13pt;
+	}
+
+	p
+	{
+		font-size: 12pt;
+	}
+
+}
+
+/*
+===========================================================
+
+NAV CSS
+
+===========================================================
+*/
+
+nav
+{
+	height: 60px;
+	width: 100vw;
+	position: fixed;
+	top:0;
+	left: 0;
+	display: flex;
+	padding: 0 20px;
+	align-content: center;
+	background-color: white;
+	justify-content: space-between;
+
+	display: none;
+	z-index: 1000;
+}
+
+.nav-left
+{
+	align-self: center;
+}
+
+.nav-right
+{
+	align-self: center;
+}
+
+.nav-right > a 
+{
+	padding: 0 25px;
+	color:initial;
+	text-decoration: none;
+}
+
+.nav-right > a:hover
+{
+	text-decoration: underline;
+}
+
+.nav-right > a > p
+{
+	display: inline;
+}
+
+.nav-buttons
+{
+	display: inline;
+}
+
+.nav-form-button
+{
+	width: 175px;
+	height:35px;
+	display: inline;
+	margin: auto;
+	border-radius: 30px;
+	text-align: center;
+	font-size: 12pt;
+	border: none;
+}
+
+.nav-form-button-email
+{
+	/*background:transparent;*/
+	border: solid;
+	border-width: 2px;
+	border-color: black;
+	color:black;
+}
+
+.nav-logo-mobile
+{
+	display: none;
+}
+
+
+
+@media only screen and (max-width: 700px)
+{
+	.about-link
+	{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 500px)
+{
+	.nav-form-button
+	{
+		width: 140px;
+		height:35px;
+		display: inline;
+		margin: auto;
+		border-radius: 30px;
+		text-align: center;
+		font-size: 10pt;
+		border: none;
+	}
+
+	.nav-form-button-email
+	{
+		/*background:transparent;*/
+		border: solid;
+		border-width: 2px;
+		border-color: black;
+		color:black;
+	}
+
+	.nav-logo
+	{
+		display: none;
+	}
+
+	.nav-logo-mobile
+	{
+		display: block;
+	}
+}
+
+/*
+===========================================================
+
+Header Section CSS
+
+===========================================================
+*/
+
+.header-img-container
+{
+	height: calc(100vh);
+	min-height: 400px;
+	background-image: url("landing-cover-desktop.jpg");
+	background-size: cover;
+	background-position: bottom right;
+	width: 100%;
+}
+
+.header-form-container
+{
+	margin: 25px;
+}
+
+.header-form
+{
+	width: 450px;
+	margin: auto;
+	color:white;
+	background-color: rgba(18,13,17,.8);
+	padding: 25px;
+	border-radius: 10px;
+}
+
+.header-form > h2
+{
+	padding-bottom: 25px;
+	font-weight: bold;
+	font-size: 24pt;
+	color:white;
+}
+
+.header-form > p
+{
+	width: 350px;
+	display: block;
+	margin: auto;
+	padding-bottom: 50px;
+	color:white;
+}
+
+.header-form-button
+{
+	width: 300px;
+	height:45px;
+	display: block;
+	margin: auto;
+	margin-bottom: 12.5px;
+	border-radius: 30px;
+	text-align: center;
+	font-size: 13pt;
+	border: none;
+}
+
+.header-form-button-email
+{
+	background:transparent;
+	border: solid;
+	border-width: 2px;
+	border-color: white;
+	color: white;
+}
+
+.header-form-button-email::placeholder
+{
+	color: white;
+	opacity: .8;
+}
+
+.gradient
+{
+	color: white;
+	transition: background .2s;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4d6ef3+0,33c7d8+100 */
+	background: #3145ff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #3145ff 0%, #0086ed 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #3145ff 0%,#0086ed 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #3145ff 0%,#0086ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3145ff', endColorstr='#0086ed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.gradient:hover
+{
+	transition: background .2s;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4d6ef3+0,33c7d8+100 */
+	background: #4d6ef3; /* Old browsers */
+	background: -moz-linear-gradient(45deg,  #4d6ef3 0%, #33c7d8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  #4d6ef3 0%,#33c7d8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  #4d6ef3 0%,#33c7d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d6ef3', endColorstr='#33c7d8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.top-col
+{
+	display: none;
+}
+
+@media only screen and (max-width: 1050px)
+{
+	.flex
+	{
+		display: block;
+	}
+
+	.flex-medium
+	{
+		display: flex;
+	}
+
+	.header-col
+	{
+		display: none;
+	}
+
+	.header-form-container
+	{
+		margin: 0px;
+	}
+
+	.header-form
+	{
+		align-self: center;
+	}
+
+}
+
+@media only screen and (max-width: 700px)
+{
+
+	.flex-medium
+	{
+		display: block;
+	}
+
+	.flex-small
+	{
+		display: flex;
+	}
+
+	.header-img-container
+	{
+		background-image: url("landing-cover-mobile.jpg");
+		background-position: center top;
+		background-color: transparent;
+	}
+
+}
+
+@media only screen and (max-width: 500px)
+{
+
+	.header-form
+	{
+		align-self: flex-end;
+	}
+
+	.top-col
+	{
+		display: block;
+		height: 28vh;
+	}
+
+	.no-flex-xs
+	{
+		display: block;
+	}
+
+
+	.header-form
+	{
+		background-color: transparent;
+		width: 90vw;
+	}
+
+	.header-img-container
+	{
+		height: calc(125vh);
+	}
+
+	.header-form > p
+	{
+		width: 80vw;
+		padding-bottom: 25px;
+	}
+
+	.header-form-button
+	{
+		width: 300px;
+		height:45px;
+	}
+
+}
+
+/*
+===========================================================
+
+Section 1 CSS
+
+===========================================================
+*/
+
+.section-1-header
+{
+	margin-top: 50px;
+}
+
+.uni-logos
+{
+	display: block;
+	margin: auto;
+	padding: 50px 0 0 0;
+	width: 100%;
+	opacity: .7;
+}
+
+.intro-disc-container
+{
+	margin-bottom: 50px;
+}
+
+.intro-disc
+{
+	padding-right: 25px;
+}
+
+.how-it-works-card
+{
+	background-color: #3145FF;
+	border-radius: 10px;
+	padding: 25px;
+	margin-right: 25px;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3145ff+0,0086ed+100 */
+	background: #3145ff; /* Old browsers */
+	/*background: -moz-linear-gradient(top,  #3145ff 0%, #0086ed 100%); 
+	background: -webkit-linear-gradient(top,  #3145ff 0%,#0086ed 100%);
+	background: linear-gradient(to bottom,  #3145ff 0%,#0086ed 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3145ff', endColorstr='#0086ed',GradientType=0 );
+	*/
+}
+
+.how-it-works-card:last-of-type
+{
+	margin-right: 0;
+}
+
+.how-it-works-card > *
+{
+	color:white;
+}
+
+.how-it-works-card > p > b
+{
+	opacity: .7;
+	font-weight: 800;
+}
+
+.research-intro
+{
+	margin-bottom: 50px;
+}
+
+.research-button-nav
+{
+	width: 100vw;
+	background-color: white;
+}
+
+.fixed-nav
+{
+	position: fixed;
+	top: 60px;
+	-webkit-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1);
+	box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.1);	
+}
+
+.research-fund-button > h3
+{
+	padding: 25px;
+	margin: 0;
+	cursor: pointer;
+}
+
+.fund-button-active
+{
+	background:#3145FF;
+}
+
+.fund-button-active > h3
+{
+	color:white;
+}
+
+.learn-more-longevity
+{
+	color:white;
+	padding-bottom: 0;
+	cursor: pointer;	
+}
+
+
+.blue
+{
+	padding-bottom: 25px;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3145ff+0,0086ed+100 */
+	background: #3145ff; /* Old browsers */
+	/*background: -moz-linear-gradient(top,  #3145ff 0%, #0086ed 100%); 
+	background: -webkit-linear-gradient(top,  #3145ff 0%,#0086ed 100%);
+	background: linear-gradient(to bottom,  #3145ff 0%,#0086ed 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3145ff', endColorstr='#0086ed',GradientType=0 );
+	*/
+}
+
+@media only screen and (max-width: 1050px)
+{
+	.how-it-works-card
+	{
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+
+	.br-desktop
+	{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px)
+{
+	.uni-logos
+	{
+		display: none;
+	}
+}
+
+/*
+===========================================================
+
+Lab Card CSS
+
+===========================================================
+*/
+
+.longevity
+{
+	padding-top: 50px;
+}
+
+.bci
+{
+	padding-top: 50px;
+	display: none;
+}
+/*
+#bci
+{
+	border-radius: 10px 0 0 0;
+}
+
+#longevity
+{
+	border-radius: 0 10px 0 0;
+}
+*/
+
+.longevity > * > * > *
+{
+	color:white;
+}
+
+.bci > * > * > *
+{
+	color:white;
+}
+
+.lab-card-container
+{
+	margin-top: 50px;
+}
+
+.featured-labs-label
+{
+	margin-bottom: 25px;
+}
+
+.lab-card
+{
+	background-color: white;
+	/*border: solid;
+	border-width: 2px;
+	border-color: white;*/
+	border-radius: 10px;
+	padding:50px;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	margin-bottom: 25px;
+}
+
+.lab-cover-img-container
+{
+	margin-right: 25px;
+	margin-left: -25px;
+	/*margin-top: px;*/
+
+}
+
+.lab-card-hr
+{
+	padding:0;
+	border-width: 1px;
+	border-color: #3145FF;;
+	margin: 25px -25px 0 -25px;
+}
+
+/*
+Longevity lab cover images
+*/
+
+#sessler-lab
+{
+	background-image: url(sessler-lab-cover.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+
+#rewire-lab
+{	
+	background-image: url(re-wire-cover.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+/*
+BCI lab cover images
+*/
+
+#lu-lab
+{
+	background-image: url(lu-research-cover.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#lewpealab-lab
+{
+	background-image: url(robinson-lab-cover.webp);
+	background-position: center;
+	background-size: cover;
+}
+
+.lab-cover-img
+{
+	width: 100%;
+	height: 100%; 
+}
+
+.mission
+{
+	color:#3145FF;
+}
+
+.lab-card > div > p
+{
+	color:black;
+}
+
+.lab-card > div > div > p
+{
+	color:black;
+}
+
+.lab-details
+{
+	padding-top: 25px;
+}
+
+.lab-details-button
+{
+	cursor: pointer;
+}
+
+.details
+{
+	color:black;
+	margin-top: 25px;
+	display: none;
+}
+
+.details-column
+{
+	padding-right: 50px;
+}
+
+.collab-logo
+{
+	margin: 25px 0;
+	filter: grayscale(100);
+}
+
+@media only screen and (max-width: 1050px)
+{
+	.lab-cover-img-container
+	{
+		width: 100%;
+		height: 200px;
+		margin: 0;
+		margin-bottom: 25px;
+	}
+
+	.lab-card
+	{
+		padding:25px;
+	}
+
+	.details-column
+	{
+		padding-right: 0;
+	}
+}
+
+/*
+===========================================================
+
+Section 3 CSS
+
+===========================================================
+*/
+
+.select-fund
+{
+	padding-bottom: 50px;
+}
+
+.fund-button-container
+{
+	margin-top:50px;
+}
+
+.select-fund-button
+{
+	width: 100%;
+	border-radius: 10px;
+	border: solid;
+	border-width: 2px;
+	border-color: #3145ff;
+	height: 100px;
+	display: flex;
+	align-content: center;
+	cursor: pointer;
+}
+
+.select-fund-button:hover
+{
+	border: none;
+	background-color: #3145ff;
+}
+
+.no-underline
+{
+	text-decoration: none;
+}
+
+.select-fund-button:hover > h2
+{
+	color: white;
+}
+
+.selected-fund
+{
+	border: none;
+	background-color: #3145ff;
+}
+
+.selected-fund > h2
+{
+	color: white;
+}
+
+.select-fund-button > h2
+{
+	align-self: center;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
+#longevity-fund-button
+{
+	margin-right: 12.5px;
+}
+
+#bci-fund-button
+{
+	margin-left: 12.5px;
+}
+
+.tier-card-container
+{
+	margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 1050px)
+{
+	#longevity-fund-button
+	{
+		margin-right:0;
+		margin-bottom: 25px;
+	}
+
+	#bci-fund-button
+	{
+		margin-left:0;
+	}
+
+	.fund-button-container
+	{
+		margin-top:25px;
+	}
+}
+
+/*
+TIER CARD CSS
+*/
+
+.tier-card
+{
+	width: 100%;
+	border: solid;
+	border-color: #3145ff;
+	border-width: 2px;
+	border-radius: 10px;
+	padding: 25px;
+	margin-bottom: 50px;
+	transition: all .2s;
+}
+
+.tier-card:hover
+{
+	transform: scale(1.01);
+}
+
+.tier-header
+{
+	justify-content: space-between;
+}
+
+.tier-price
+{
+	text-align: center;
+	width: 90px;
+	height: 28px;
+	background-color: #21D95A;
+	color:#236517;
+	border-radius: 10px;
+}
+
+.rewards-container
+{
+	margin-bottom: 25px;
+}
+
+.reward
+{
+	width: calc(33% - 12.5px);
+	border: solid;
+	border-color: #3145ff;
+	border-width: 2px;
+	padding: 25px;
+	margin-right: 25px;
+	position: relative;
+}
+
+.reward:last-of-type
+{
+	margin-right: 0
+}
+
+.reward > *
+{
+	color:#3145ff;
+}
+
+.tier-card-submit
+{
+	width: 100%;
+	height: 45px;
+	font-size: 13pt;
+	background-color: #3145ff;
+	display: flex;
+	color:white;
+	align-items: center;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.tier-card-submit > p
+{
+	align-self: center;
+	text-align: center;
+	width: 100%;
+}
+
+/*
+tier card  selected css
+*/
+
+.tier-card-selected
+{
+	border: none;
+	background-color: #3145ff;
+	color:white;
+}
+
+.tier-card-selected:hover
+{
+	transform: scale(1);
+}
+
+.tier-card-selected > *
+{
+	color:white;
+}
+
+.tier-card-selected > * > *
+{
+	color:white;
+}
+
+.tier-card-selected > .rewards-container > .reward
+{
+	border-color: white;
+}
+
+.tier-card-selected > .contribute-buttons > .tier-card-submit
+{
+	background: white;
+	color:#3145ff;;
+}
+
+.tier-card-selected > .rewards-container > .reward > h4
+{
+	color:white;
+}
+
+.tier-card-selected > .rewards-container > .reward > p2
+{
+	color:white;
+}
+
+@media only screen and (max-width: 1050px)
+{
+	.reward
+	{
+		width: 100%;
+		margin-bottom: 25px;
+	}
+}
+
+
+/*
+===========================================================
+
+Contribute Section CSS
+
+===========================================================
+*/
+
+.contribute-section
+{
+	margin-top: 60px;
+}
+
+.fund-container
+{
+
+}
+
+.fund
+{
+	position: fixed;
+	background: #3145ff;
+	color:white;
+	width: 225px;
+	padding: 25px;
+	margin-left: 25px;
+	border-radius: 10px;
+}
+
+.fund > h3
+{
+	color:white;
+}
+
+.mobile-fund
+{
+	background: #3145ff;
+	color:white;
+	width: 225px;
+	padding: 25px;
+	margin-top: 25px;
+	/*	margin-left: 25px;*/
+	border-radius: 10px;
+	width: 100%;
+	display: none;
+}
+
+
+.mobile-fund > h2
+{
+	color:white;
+}
+
+
+@media only screen and (max-width: 1050px)
+{
+	.fund
+	{
+		display: none;
+	}
+	
+	.mobile-fund
+	{
+		display: block;
+	}
+}
+
+/*
+===========================================================
+
+Contribute Section CSS
+
+===========================================================
+*/
+
+.about-us
+{
+	padding-bottom: 50px;
+}
+
+.about-select-fund
+{
+	margin-top: 50px;
+}
+
+
+
+
