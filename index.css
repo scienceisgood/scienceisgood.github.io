@@ -96,6 +96,14 @@ hr
 	border-style: solid;
 }
 
+.faq-hr
+{
+	border-width: 1px;
+	border-color: #3145FF;
+	margin: 12.5px 0;
+	border-style: solid;
+}
+
 input[type="submit"]
 {
 	cursor: pointer;
@@ -1280,5 +1288,29 @@ Success Section CSS
 	}
 }
 
+/*
+===========================================================
 
+FAQ CSS
+
+===========================================================
+*/
+
+.faq-q
+{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin: 25px 0;
+	cursor: pointer;
+}
+
+.faq-a
+{
+	display: none;
+}
+
+.faq-section
+{
+	margin-bottom: 50px;
+}
 
