@@ -45,8 +45,8 @@ for (const butt of checkoutButtons) {
         // a successful payment.
         // Instead use one of the strategies described in
         // https://stripe.com/docs/payments/checkout/fulfillment
-        successUrl: window.location.protocol + '//axitelabs.com/success.html',
-        cancelUrl: window.location.protocol + '//axitelabs.com',
+        successUrl: 'https://www.axitelabs.com/success.html',
+        cancelUrl: 'https://www.axitelabs.com',
     })
     .then(function (result) {
         if (result.error) {
