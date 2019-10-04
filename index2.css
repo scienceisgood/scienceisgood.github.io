@@ -1,0 +1,923 @@
+/*
+======================================
+
+GENERAL CSS
+
+======================================
+*/
+
+@font-face
+{
+	font-family: migrant;
+
+	src: url(../fonts/migrant.otf);
+}
+
+*
+{
+	font-family: helvetica, sans;
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	overflow-x: hidden;
+}
+
+body
+{
+	overflow-x: hidden;
+
+	background: #3f2ad5;
+}
+
+h1
+{
+	font-weight: lighter;
+}
+
+h2
+{
+	font-weight: lighter;
+	font-size: 1.8em;
+}
+
+p
+{
+	font-size: 14pt;
+	font-weight: lighter;
+	line-height: 130%;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.flex
+{
+	display: flex;
+}
+
+.col
+{
+	flex: 1;
+}
+
+.center-text
+{
+	text-align: center;
+}
+
+.button
+{
+	padding: 10px 20px;
+
+	cursor: pointer;
+	background-color: white;
+
+	border: none;
+	border-radius: 30px;
+	transition: all .2s;
+}
+
+.button:focus
+{
+	outline: none;
+}
+
+.button:hover
+{
+	border-radius: 10px;
+}
+
+.blue-button
+{
+	background: #0acab5;
+}
+
+@media only screen and (max-width: 768px) {
+	h2
+	{
+		font-weight: lighter;
+		/*font-size: 1.4em;*/
+	}
+
+	p
+	{
+		font-size: 14pt;
+	}
+}
+
+/*
+======================================
+
+NAV CSS
+
+======================================
+*/
+
+nav
+{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+
+	display: flex;
+
+
+	width: 100%;
+	padding: 20px 50px 20px;
+
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-p
+{
+	color: white;
+}
+
+.left-nav
+{
+	display: flex;
+
+	align-items: center;
+}
+
+.nav-p
+{
+	padding-left: 25px;
+}
+
+@media only screen and (max-width: 420px) {
+	nav
+	{
+		padding: 10px 20px;
+		background-color: #4118D6;
+	}
+	.nav-p
+	{
+		font-size: 11pt;
+	}
+
+	.nav-p-button
+	{
+		font-size: 11pt;
+	}
+}
+
+
+/*
+======================================
+
+INDEX CSS
+
+======================================
+*/
+
+/*
+===========
+landing css
+===========
+*/
+
+/*
+----------
+Background CSS
+----------
+*/
+
+.background-spacer
+{
+	width: 100vw;
+	height: 100vh;
+	min-height: 700px;
+	user-select: none;
+}
+
+.background-container-container
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	z-index: -1;
+
+	width: 100%;
+	height: 100%;
+	min-height: 700px;
+}
+
+.background-container
+{
+	position: relative;
+	z-index: -1;
+	height: 100%;
+	pointer-events: none;
+}
+
+.top-swoosh
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+
+	width: 100%;
+	min-width: 800px;
+
+	user-select: none;
+	pointer-events: none;
+}
+
+.bottom-swoosh
+{
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+
+	width: 100%;
+	min-width: 800px;
+	user-select: none;
+	pointer-events: none;
+}
+
+@media only screen and (max-width: 1100px) {
+	.bottom-swoosh
+	{
+		display: none;
+	}
+}
+
+/*
+----------
+Hero Img Css
+----------
+*/
+
+.desktop-hero
+{
+	position: absolute;
+	z-index: -1;
+	top: 100px;
+	left: 45vw;
+
+	width: 125vh;
+	min-width: 900px
+}
+
+.mobile-hero
+{
+	display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+	.desktop-hero
+	{
+		display: none;
+	}
+
+	.mobile-hero
+	{
+		display: block;
+		margin: auto;
+		width: 90%;
+		margin-top:-120px;
+
+	}
+}
+
+
+/*
+----------
+Landing Text Css
+----------
+*/
+
+.landing-text-container
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	min-height: 800px;
+}
+
+.landing-text
+{
+	display: flex;
+
+	width: 45vw;
+	height: 100%;
+	padding-left: 50px;
+
+	color: white;
+
+	align-items: center;
+	justify-content: space-around;
+}
+
+.landing-text > div > *
+{
+	padding: 15px 0;
+}
+
+h1
+{
+	font-family: migrant;
+	font-size: 2.4em;
+}
+
+.landing-p
+{
+	font-size: 1.3em;
+
+	opacity: .8;
+}
+
+.landing-button
+{
+	font-size: 15pt;
+	font-weight: lighter;
+
+	display: block;
+
+	width: 300px;
+	margin-bottom: 10pt;
+}
+
+@media only screen and (max-width: 1100px) {
+	.landing-text
+	{
+		width: 100vw;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.landing-button
+	{
+		width: 100%;
+	}
+
+	h1
+	{
+		font-family: migrant;
+		font-size: 2.1em;
+		text-align: center;
+	}
+
+	.landing-p
+	{
+		font-size: 1.2em;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	h1
+	{
+		font-family: migrant;
+		font-size: 1.6em;
+		text-align: center;
+	}
+
+	.landing-p
+	{
+		text-align: center;
+	}
+
+	.landing-text
+	{
+		width: 100vw;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/*
+----------
+Advantage Css
+----------
+*/
+
+.advantages
+{
+	padding: 100px 50px;
+	background: white;
+}
+
+.advantage-container
+{
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	max-width: 1000px;
+	padding-bottom: 50px;
+}
+
+.advantage
+{
+	width: 300px;
+}
+
+.advantage > *
+{
+	padding:20px 0;
+}
+
+.advantage > p
+{
+	opacity: .8;
+}
+
+.advantage-img
+{
+	display: block;
+	margin: auto;
+}
+
+.getInTouch
+{
+	display: block;
+	margin: auto;
+	width: 200px
+}
+
+@media only screen and (max-width: 768px) {
+	.advantage
+	{
+		width: 200px;
+	}
+
+	.advantage-img
+	{
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 420px) {
+	.advantages
+	{
+		padding: 50px 20px;
+	}
+
+	.advantage-container
+	{
+		display: block;
+		margin: auto;
+		padding-bottom: 25px;
+	}
+
+	.advantage
+	{
+		width: 80%;
+		padding-bottom: 25px;
+		display: block;
+		margin: auto;
+	}
+
+	.advantage-img
+	{
+		width: 80%;
+	}
+
+	.advantage > *
+	{
+		padding:10px 0;
+	}
+}
+
+/*
+----------
+Features Css
+----------
+*/
+
+.features
+{
+	color:white;
+	padding: 50px 50px;
+	position: relative;
+}
+
+
+.feature-container
+{
+	display: block;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.feature
+{
+	display: flex;
+	align-items: center;
+	padding-bottom: 25px;
+}
+
+.feature-img-mobile
+{
+	display: none;
+}
+
+.feature-text
+{
+	display: block;
+	margin: auto;
+	max-width: 400px
+}
+
+.feature-text > h2
+{
+	padding-bottom: 25px;
+}
+
+.feature-text > p
+{
+	line-height: 140%;
+	opacity: .8;
+}
+
+@media only screen and (max-width: 768px) {
+	.feature-img
+	{
+		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.features
+	{
+		padding: 50px 10px;
+	}
+
+	.feature
+	{
+		display: block;
+	}
+
+	.feature-img
+	{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+
+	.feature-img-mobile
+	{
+		display: block;
+	}
+
+	.feature-img-desktop
+	{
+		display: none;
+	}
+
+	.feature-text > h2
+	{
+		text-align: center;
+	}
+
+	.feature-text > p
+	{
+		text-align: center;
+		width: 90%;
+		display: block;
+		margin: auto;
+		padding-bottom: 50px;
+
+	}
+
+
+}
+
+
+
+
+/*
+----------
+Form Css
+----------
+*/
+
+.form
+{
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form > h2
+{
+	color:white;
+	padding-bottom: 50px;
+}
+
+.mobile-br
+{
+	display: none;
+}
+
+.input-form
+{
+	background: #ECECF2;
+	padding: 50px;
+	width: 700px;
+	border-radius: 10px;
+	display: block;
+	margin: auto;
+}
+
+#form-swoosh
+{
+	display: block;
+}
+
+.flex-input
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+input
+{
+	padding: 15px;
+	border: solid;
+	border-color: #D6D3E5;
+	border: 4px;
+	margin-bottom: 20px;
+	font-size: 11pt;
+}
+
+input:focus
+{
+	border: none;
+}
+
+.input-field-short
+{
+	width: 280px;
+}
+
+.input-field-long
+{
+	width: 600px;
+}
+
+.input-large
+{
+	padding-bottom: 100px;
+}
+
+input[type=submit]
+{
+	padding: 15px;
+	color: #fff;
+	background-color: #0acab5;
+	border-radius: 30px;
+	margin-bottom: 20px;
+	font-size: 14pt;
+	width: 100%;
+	 -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 800px) {
+	.mobile-br
+	{
+		display: initial;
+	}
+
+	.desktop-br
+	{
+		display: none;
+	}
+
+	.input-form
+	{
+		background: #ECECF2;
+		padding: 25px;
+		width: 90%;
+		border-radius: 10px;
+		display: block;
+		margin: auto;
+	}
+
+	.input-field-short
+	{
+		width: 35vw;
+	}
+
+	.input-field-long
+	{
+		width: 100%;
+	}
+}
+
+/*
+======================================
+
+Details Page CSS
+
+======================================
+*/
+
+.background-spacer-details
+{
+	width: 100vw;
+	height: 500px;
+
+	user-select: none;
+}
+
+.features-details-page
+{
+	color:black;
+	padding: 50px 50px;
+	position: relative;
+}
+
+.form-details-page
+{
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-details-page > h2
+{
+	color:black;
+	padding-bottom: 50px;
+}
+
+.splash-spacer
+{
+	height: 500px;
+}
+
+
+.top-swoosh-detail
+{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+
+	width: 100%;
+	min-width: 900px;
+	height: 500px;
+
+	user-select: none;
+	pointer-events: none;
+}
+
+.splash-text-header
+{
+	color:white;
+	text-align: center;
+	position: absolute;
+	top: 175px;
+	width: 100%;
+	font-size: 3em;
+	font-weight: normal;
+}
+
+@media only screen and (max-width: 420px) {
+	.splash-text-header
+	{
+		font-size: 1.5em;	
+		padding:0 15pt;
+		top: 150px;
+		line-height: 150%;
+	}
+
+	.splash-spacer
+	{
+		height: 400px;
+	}
+
+	.top-swoosh-detail
+	{
+		height: 400px;
+	}
+
+
+	.features-details-page
+	{
+		padding: 25px 25px;
+	}
+
+}
+
+/*
+======================================
+
+Details Page CSS
+
+======================================
+*/
+
+.form-get-in-touch
+{
+	padding-bottom: 20px;
+	position: relative;
+	padding-top: 150px;
+}
+
+.form-get-in-touch > h2
+{
+	color:white;
+	padding-bottom: 50px;
+}
+
+.background-container-container-signUp
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	z-index: -1;
+
+	width: 100%;
+	height: 100%;
+	min-height: 700px;
+}
+
+@media only screen and (max-width: 420px) {
+	.background-container-container-signUp
+	{
+		min-height: 650px;
+	}
+}
+/*
+======================================
+
+Sign In Page CSS
+
+======================================
+*/
+
+.sign-in-container
+{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.sign-in-form
+{
+	background: #ECECF2;
+	padding:30px 20px 10px;
+	width: 400px;
+	border-radius: 10px;
+	display: block;
+	margin: auto;
+}
+
+.sign-in-input
+{
+	display: block;
+	width: 100%;
+}
+
+.alert {
+	padding: 20px;
+	background-color: #f44336; /* Red */
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	text-align: center;
+}
+
+/* The close button */
+.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+	color: black;
+}
+
+@media only screen and (max-width: 420px) {
+	.sign-in-form
+	{
+		background: #ECECF2;
+		padding:30px 20px 10px;
+		width: 80%;
+		border-radius: 10px;
+		display: block;
+		margin: auto;
+	}
+}
+
+
