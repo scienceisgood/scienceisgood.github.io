@@ -203,6 +203,11 @@ Index CSS
 buttons
 */
 
+button
+{
+	background-color: white;
+}
+
 .indexButton
 {
 	display: block;
