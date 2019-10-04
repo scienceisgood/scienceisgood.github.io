@@ -337,8 +337,10 @@ Landing Text Css
 {
 	margin-bottom: 0;
 	padding-bottom: 0;
-	line-height: 70%;
+	line-height: 120%;
 	font-size: 2em;
+	font-family: sans 
+	font-weight: strong;
 }
 
 .landing-text > div > *
@@ -406,7 +408,7 @@ h1
 	.landing-h1
 	{
 		font-family: migrant;
-		font-size: 1.6em;
+		font-size: 1.3em;
 		text-align: center;
 	}
 
