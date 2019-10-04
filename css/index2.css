@@ -333,6 +333,14 @@ Landing Text Css
 	justify-content: space-around;
 }
 
+.landing-h1
+{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	line-height: 70%;
+	font-size: 2em;
+}
+
 .landing-text > div > *
 {
 	padding: 15px 0;
@@ -341,7 +349,6 @@ Landing Text Css
 h1
 {
 	font-family: migrant;
-	font-size: 2.4em;
 }
 
 .landing-p
@@ -362,6 +369,13 @@ h1
 	margin-bottom: 10pt;
 }
 
+@media only screen and (max-width: 1400px) {
+	.landing-h1
+	{
+		font-size: 2.1em;
+	}
+}
+
 @media only screen and (max-width: 1100px) {
 	.landing-text
 	{
@@ -375,10 +389,8 @@ h1
 		width: 100%;
 	}
 
-	h1
+	.landing-h1
 	{
-		font-family: migrant;
-		font-size: 2.1em;
 		text-align: center;
 	}
 
@@ -386,11 +398,12 @@ h1
 	{
 		font-size: 1.2em;
 		text-align: center;
+		text-align: -webkit-center;
 	}
 }
 
 @media only screen and (max-width: 420px) {
-	h1
+	.landing-h1
 	{
 		font-family: migrant;
 		font-size: 1.6em;
@@ -672,11 +685,13 @@ input:focus
 .input-field-short
 {
 	width: 280px;
+	margin-bottom: 10px;
 }
 
 .input-field-long
 {
 	width: 600px;
+	margin-bottom: 10px;
 }
 
 .input-large
@@ -774,6 +789,7 @@ Details Page CSS
 	position: absolute;
 	z-index: -1;
 	top: 0;
+	left: 0;
 
 	width: 100vw;
 	min-width: 900px;
@@ -783,15 +799,23 @@ Details Page CSS
 	pointer-events: none;
 }
 
+.splash-text
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
 .splash-text-header
 {
 	color:white;
-	text-align: center;
-	position: absolute;
-	top: 175px;
 	width: 100%;
 	font-size: 3em;
 	font-weight: normal;
+	display: block;
+	margin: auto;
+	text-align: center;
 }
 
 @media only screen and (max-width: 420px) {
