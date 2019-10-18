@@ -27,6 +27,11 @@ html
 	/*overflow-x: hidden;*/
 }
 
+iframe
+{
+	border: none;
+}
+
 body
 {
 	overflow-x: hidden;
@@ -633,7 +638,7 @@ Form Css
 
 .form
 {
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 	position: relative;
 }
 
@@ -770,7 +775,7 @@ Details Page CSS
 
 .form-details-page
 {
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 	position: relative;
 }
 
@@ -858,7 +863,7 @@ Details Page CSS
 
 .form-get-in-touch
 {
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 	position: relative;
 	padding-top: 150px;
 }
