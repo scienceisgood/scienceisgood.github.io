@@ -1,6 +1,6 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyCWZ4Rzqzc49X4S0AN4wmTTebQG4_QWiik",
+    apiKey: "removed",
     authDomain: "silkswap-48055.firebaseapp.com",
     databaseURL: "https://silkswap-48055.firebaseio.com",
     projectId: "silkswap-48055",
